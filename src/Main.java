@@ -48,6 +48,42 @@ public class Main {
         System.out.println("Количество дней при похудении на 250г: " + badDayLostWeight + " дней");
         System.out.println("Среднее количество дней для похудения: " + averageLostDayWeight + " день");
 
+        int salaryOldMasha = 67760;
+        int salaryOldDenis = 83690;
+        int salaryOldKristina = 76230;
+        int salaryNewMasha = (int) (salaryOldMasha * 0.1 + salaryOldMasha);
+        int salaryNewDenis = (int) (salaryOldDenis * 0.1 + salaryOldDenis);
+        int salaryNewKristina = (int) (salaryOldKristina * 0.1 + salaryOldKristina);
+        int year = 12;
+        int salaryOldMashaYear = salaryOldMasha * year;
+        int salaryOldDenisYear = salaryOldDenis * year;
+        int salaryOldKristinaYear = salaryOldKristina * year;
+
+        int salaryNewMashaYear = salaryNewMasha * year;
+        int salaryNewDenisYear = salaryNewDenis * year;
+        int salaryNewKristinaYear = salaryNewKristina * year;
+
+        int salaryDifferenceMasha = salaryNewMashaYear - salaryOldMashaYear;
+        int salaryDifferenceDenis = salaryNewDenisYear - salaryOldDenisYear;
+        int salaryDifferenceKristina = salaryNewKristinaYear - salaryOldKristinaYear;
+
+        System.out.println("Зарплата Маши " + salaryOldMasha + " рублей");
+        System.out.println("Зарплата Дениса " + salaryOldDenis + " рублей");
+        System.out.println("Зарплата Кристины " + salaryOldKristina + " рублей");
+
+        System.out.println("Новая Зарплата Маши " + salaryNewMasha + " рублей");
+        System.out.println("Новая Зарплата Дениса " + salaryNewDenis + " рублей");
+        System.out.println("Новая Зарплата Кристины " + salaryNewKristina + " рублей");
+
+        System.out.println("Раньше Маша получала за год  " + salaryOldMashaYear + " рублей");
+        System.out.println("Раньше Денис получал за год  " + salaryOldDenisYear + " рублей");
+        System.out.println("Раньше Кристина получала за год  " + salaryOldKristinaYear + " рублей");
+
+        System.out.println("Маша теперь получает " + salaryNewMashaYear + " рублей" + " Годовой доход вырос на " + salaryDifferenceMasha + " рублей");
+        System.out.println("Денис теперь получает " + salaryNewDenisYear + " рублей" + " Годовой доход вырос на " + salaryDifferenceDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryNewKristinaYear + " рублей" + " Годовой доход вырос на " + salaryDifferenceKristina + " рублей");
+
+
 
 
     }
